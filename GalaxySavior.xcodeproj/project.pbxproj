@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22CE3899187DEBCA00970166 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CE3898187DEBCA00970166 /* Cocoa.framework */; };
+		22CE38A3187DEBCA00970166 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22CE38A1187DEBCA00970166 /* InfoPlist.strings */; };
+		22CE38A5187DEBCA00970166 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CE38A4187DEBCA00970166 /* main.m */; };
+		22CE38A9187DEBCA00970166 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 22CE38A7187DEBCA00970166 /* Credits.rtf */; };
+		22CE38AC187DEBCA00970166 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CE38AB187DEBCA00970166 /* AppDelegate.m */; };
+		22CE38AF187DEBCA00970166 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22CE38AD187DEBCA00970166 /* MainMenu.xib */; };
+		22CE38B1187DEBCA00970166 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22CE38B0187DEBCA00970166 /* Images.xcassets */; };
+		22CE38B8187DEBCA00970166 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CE38B7187DEBCA00970166 /* XCTest.framework */; };
+		22CE38B9187DEBCA00970166 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CE3898187DEBCA00970166 /* Cocoa.framework */; };
+		22CE38C1187DEBCA00970166 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22CE38BF187DEBCA00970166 /* InfoPlist.strings */; };
+		22CE38C3187DEBCA00970166 /* GalaxySaviorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CE38C2187DEBCA00970166 /* GalaxySaviorTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22CE38BA187DEBCA00970166 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22CE388D187DEBCA00970166 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22CE3894187DEBCA00970166;
+			remoteInfo = GalaxySavior;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		22CE3895187DEBCA00970166 /* GalaxySavior.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GalaxySavior.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22CE3898187DEBCA00970166 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		22CE389B187DEBCA00970166 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		22CE389C187DEBCA00970166 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		22CE389D187DEBCA00970166 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		22CE38A0187DEBCA00970166 /* GalaxySavior-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GalaxySavior-Info.plist"; sourceTree = "<group>"; };
+		22CE38A2187DEBCA00970166 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		22CE38A4187DEBCA00970166 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		22CE38A6187DEBCA00970166 /* GalaxySavior-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GalaxySavior-Prefix.pch"; sourceTree = "<group>"; };
+		22CE38A8187DEBCA00970166 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		22CE38AA187DEBCA00970166 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		22CE38AB187DEBCA00970166 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		22CE38AE187DEBCA00970166 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		22CE38B0187DEBCA00970166 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		22CE38B6187DEBCA00970166 /* GalaxySaviorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GalaxySaviorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22CE38B7187DEBCA00970166 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		22CE38BE187DEBCA00970166 /* GalaxySaviorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GalaxySaviorTests-Info.plist"; sourceTree = "<group>"; };
+		22CE38C0187DEBCA00970166 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		22CE38C2187DEBCA00970166 /* GalaxySaviorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GalaxySaviorTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22CE3892187DEBCA00970166 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22CE3899187DEBCA00970166 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22CE38B3187DEBCA00970166 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22CE38B9187DEBCA00970166 /* Cocoa.framework in Frameworks */,
+				22CE38B8187DEBCA00970166 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22CE388C187DEBCA00970166 = {
+			isa = PBXGroup;
+			children = (
+				22CE389E187DEBCA00970166 /* GalaxySavior */,
+				22CE38BC187DEBCA00970166 /* GalaxySaviorTests */,
+				22CE3897187DEBCA00970166 /* Frameworks */,
+				22CE3896187DEBCA00970166 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22CE3896187DEBCA00970166 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22CE3895187DEBCA00970166 /* GalaxySavior.app */,
+				22CE38B6187DEBCA00970166 /* GalaxySaviorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22CE3897187DEBCA00970166 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22CE3898187DEBCA00970166 /* Cocoa.framework */,
+				22CE38B7187DEBCA00970166 /* XCTest.framework */,
+				22CE389A187DEBCA00970166 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		22CE389A187DEBCA00970166 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22CE389B187DEBCA00970166 /* AppKit.framework */,
+				22CE389C187DEBCA00970166 /* CoreData.framework */,
+				22CE389D187DEBCA00970166 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		22CE389E187DEBCA00970166 /* GalaxySavior */ = {
+			isa = PBXGroup;
+			children = (
+				22CE38AA187DEBCA00970166 /* AppDelegate.h */,
+				22CE38AB187DEBCA00970166 /* AppDelegate.m */,
+				22CE38AD187DEBCA00970166 /* MainMenu.xib */,
+				22CE38B0187DEBCA00970166 /* Images.xcassets */,
+				22CE389F187DEBCA00970166 /* Supporting Files */,
+			);
+			path = GalaxySavior;
+			sourceTree = "<group>";
+		};
+		22CE389F187DEBCA00970166 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22CE38A0187DEBCA00970166 /* GalaxySavior-Info.plist */,
+				22CE38A1187DEBCA00970166 /* InfoPlist.strings */,
+				22CE38A4187DEBCA00970166 /* main.m */,
+				22CE38A6187DEBCA00970166 /* GalaxySavior-Prefix.pch */,
+				22CE38A7187DEBCA00970166 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22CE38BC187DEBCA00970166 /* GalaxySaviorTests */ = {
+			isa = PBXGroup;
+			children = (
+				22CE38C2187DEBCA00970166 /* GalaxySaviorTests.m */,
+				22CE38BD187DEBCA00970166 /* Supporting Files */,
+			);
+			path = GalaxySaviorTests;
+			sourceTree = "<group>";
+		};
+		22CE38BD187DEBCA00970166 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22CE38BE187DEBCA00970166 /* GalaxySaviorTests-Info.plist */,
+				22CE38BF187DEBCA00970166 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22CE3894187DEBCA00970166 /* GalaxySavior */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22CE38C6187DEBCA00970166 /* Build configuration list for PBXNativeTarget "GalaxySavior" */;
+			buildPhases = (
+				22CE3891187DEBCA00970166 /* Sources */,
+				22CE3892187DEBCA00970166 /* Frameworks */,
+				22CE3893187DEBCA00970166 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GalaxySavior;
+			productName = GalaxySavior;
+			productReference = 22CE3895187DEBCA00970166 /* GalaxySavior.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22CE38B5187DEBCA00970166 /* GalaxySaviorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22CE38C9187DEBCA00970166 /* Build configuration list for PBXNativeTarget "GalaxySaviorTests" */;
+			buildPhases = (
+				22CE38B2187DEBCA00970166 /* Sources */,
+				22CE38B3187DEBCA00970166 /* Frameworks */,
+				22CE38B4187DEBCA00970166 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22CE38BB187DEBCA00970166 /* PBXTargetDependency */,
+			);
+			name = GalaxySaviorTests;
+			productName = GalaxySaviorTests;
+			productReference = 22CE38B6187DEBCA00970166 /* GalaxySaviorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22CE388D187DEBCA00970166 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = sree;
+				TargetAttributes = {
+					22CE38B5187DEBCA00970166 = {
+						TestTargetID = 22CE3894187DEBCA00970166;
+					};
+				};
+			};
+			buildConfigurationList = 22CE3890187DEBCA00970166 /* Build configuration list for PBXProject "GalaxySavior" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22CE388C187DEBCA00970166;
+			productRefGroup = 22CE3896187DEBCA00970166 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22CE3894187DEBCA00970166 /* GalaxySavior */,
+				22CE38B5187DEBCA00970166 /* GalaxySaviorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22CE3893187DEBCA00970166 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22CE38A3187DEBCA00970166 /* InfoPlist.strings in Resources */,
+				22CE38B1187DEBCA00970166 /* Images.xcassets in Resources */,
+				22CE38A9187DEBCA00970166 /* Credits.rtf in Resources */,
+				22CE38AF187DEBCA00970166 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22CE38B4187DEBCA00970166 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22CE38C1187DEBCA00970166 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22CE3891187DEBCA00970166 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22CE38AC187DEBCA00970166 /* AppDelegate.m in Sources */,
+				22CE38A5187DEBCA00970166 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22CE38B2187DEBCA00970166 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22CE38C3187DEBCA00970166 /* GalaxySaviorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22CE38BB187DEBCA00970166 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22CE3894187DEBCA00970166 /* GalaxySavior */;
+			targetProxy = 22CE38BA187DEBCA00970166 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		22CE38A1187DEBCA00970166 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22CE38A2187DEBCA00970166 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		22CE38A7187DEBCA00970166 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22CE38A8187DEBCA00970166 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		22CE38AD187DEBCA00970166 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22CE38AE187DEBCA00970166 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		22CE38BF187DEBCA00970166 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22CE38C0187DEBCA00970166 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22CE38C4187DEBCA00970166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		22CE38C5187DEBCA00970166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		22CE38C7187DEBCA00970166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GalaxySavior/GalaxySavior-Prefix.pch";
+				INFOPLIST_FILE = "GalaxySavior/GalaxySavior-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		22CE38C8187DEBCA00970166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GalaxySavior/GalaxySavior-Prefix.pch";
+				INFOPLIST_FILE = "GalaxySavior/GalaxySavior-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		22CE38CA187DEBCA00970166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GalaxySavior.app/Contents/MacOS/GalaxySavior";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GalaxySavior/GalaxySavior-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GalaxySaviorTests/GalaxySaviorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		22CE38CB187DEBCA00970166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GalaxySavior.app/Contents/MacOS/GalaxySavior";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GalaxySavior/GalaxySavior-Prefix.pch";
+				INFOPLIST_FILE = "GalaxySaviorTests/GalaxySaviorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22CE3890187DEBCA00970166 /* Build configuration list for PBXProject "GalaxySavior" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22CE38C4187DEBCA00970166 /* Debug */,
+				22CE38C5187DEBCA00970166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22CE38C6187DEBCA00970166 /* Build configuration list for PBXNativeTarget "GalaxySavior" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22CE38C7187DEBCA00970166 /* Debug */,
+				22CE38C8187DEBCA00970166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		22CE38C9187DEBCA00970166 /* Build configuration list for PBXNativeTarget "GalaxySaviorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22CE38CA187DEBCA00970166 /* Debug */,
+				22CE38CB187DEBCA00970166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22CE388D187DEBCA00970166 /* Project object */;
+}
