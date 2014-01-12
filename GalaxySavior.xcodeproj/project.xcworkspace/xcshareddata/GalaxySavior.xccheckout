@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>07CD4842-5ECD-42A3-A305-C03EBFE99264</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GalaxySavior</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>63CE4515-C43E-416D-97AD-37450649FE61</key>
+		<string>https://github.com/r-sreesaran/GalaxySavior.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GalaxySavior.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>63CE4515-C43E-416D-97AD-37450649FE61</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/r-sreesaran/GalaxySavior.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>63CE4515-C43E-416D-97AD-37450649FE61</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>63CE4515-C43E-416D-97AD-37450649FE61</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GalaxySavior</string>
+		</dict>
+	</array>
+</dict>
+</plist>
