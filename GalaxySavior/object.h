@@ -6,12 +6,12 @@
 //  Copyright (c) 2014 sree. All rights reserved.
 //
 
-enum IDS{PLAYER, BULLET, ENEMY};
+//enum IDS{PLAYER, BULLET, ENEMY};
 
 //Our Player
 typedef struct
 {
-	int ID;
+	//int ID;
 	int x;
 	int y;
 	int lives;
@@ -23,7 +23,7 @@ typedef struct
 
 typedef struct
 {
-	int ID;
+	//int ID;
 	int x;
 	int y;
 	bool live;
@@ -32,11 +32,11 @@ typedef struct
 
 typedef struct
 {
-	int ID;
+	//int ID;
 	int x;
 	int y;
 	bool live;
 	int speed;
 	int boundx;
 	int boundy;
-}Comet;
+}Commet;

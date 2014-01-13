@@ -16,7 +16,10 @@ const int x=0;
 const int y=0;
 const int FPS = 60;
 const int num_bullets=5;
+const int num_commets = 26;
 const bool GameOver= false;
+int  x_temp=0;
+int y_temp=10;
 
 enum MKEYS{KEY_UP,KEY_DOWN,KEY_LEFT,KEY_RIGHT,KEY_SPACEBAR};
 bool keys[5]= {false,false,false,false,false};
@@ -33,6 +36,10 @@ void draw_bullet(Bullet bullet[]);
 void fire_bullet(Bullet bullet[],SpaceShip *ship);
 void update_bullet(Bullet bullet[]);
 
+void init_commet(Commet commet[]);
+void draw_commet(Commet commet[]);
+void update_commet(Commet commet[]);
+
 int main(void)
 {
     bool done =false;
@@ -42,6 +49,7 @@ int main(void)
     ALLEGRO_EVENT_QUEUE *event_queue = NULL;
     SpaceShip ship;
     Bullet bullet[num_bullets];
+    Commet commet[num_commets];
     if(!al_init())
     {
         fprintf(stderr,"allegro is not intialized");
@@ -75,6 +83,7 @@ int main(void)
     al_register_event_source(event_queue,al_get_display_event_source(display));
     init_ship(&ship);
     init_bullet(&bullet);
+    init_commet(&commet);
     al_start_timer(timer);
     while(!done)
     {
@@ -106,6 +115,7 @@ int main(void)
             if(!GameOver)
             {
                 update_bullet(&bullet);
+                update_commet(&commet);
             }
             
             redraw = true;
@@ -185,6 +195,7 @@ int main(void)
             al_clear_to_color(al_map_rgb(255,100,100));
             draw_ship(&ship);
             draw_bullet(bullet);
+            draw_commet(commet);
             al_flip_display();
             al_clear_to_color(al_map_rgb(255,100,100));
             
@@ -202,9 +213,9 @@ void init_ship(SpaceShip *ship)
     ship->x=SCREEN_W/2;
     ship->y=0;
     ship->lives = 3;
-    ship->boundx = 10;
-    ship->boundy = 20;
-    ship->ID=PLAYER;
+    ship->x = SCREEN_H/2;
+    ship->y = SCREEN_W/2;
+   // ship->ID=PLAYER;
     ship->speed =10 ;
     ship->score = 0;
 }
@@ -257,18 +268,19 @@ void move_ship_down(SpaceShip *ship)
 
 void init_bullet(Bullet *bullet)
 {
-    for (int i=0;i<5;i++)
+    for (int i=0;i<num_bullets;i++)
     {
-    bullet[i].ID=BULLET;
+        
+  //bullet[i].ID=BULLET;
 	bullet[i].live = false;
 	bullet[i].speed=6;
-
+   
     }
 }
 
 void fire_bullet(Bullet *bullet,SpaceShip *ship)
 {
-    for (int i=0;i<5;i++)
+    for (int i=0;i<num_bullets;i++)
     {
     if(!bullet[i].live)
     {
@@ -280,9 +292,9 @@ void fire_bullet(Bullet *bullet,SpaceShip *ship)
     }
 }
 
-void draw_bullet(Bullet bullet[])
+void draw_bullet(Bullet *bullet)
 {
-    for (int i=0;i<5;i++)
+    for (int i=0;i<num_bullets;i++)
     {
     if(bullet[i].live)
     {
@@ -291,11 +303,13 @@ void draw_bullet(Bullet bullet[])
        // fprintf(stderr," %d) the co-ordinates of x %d and the y position %d ",i,bullet[i].x,bullet[i].y);
     }
     }
+   // al_draw_filled_circle(40,10,10,al_map_rgb(100,100,100));
+    
 }
 
 void update_bullet(Bullet *bullet)
 {
-    for(int i = 0; i < 5; i++)
+    for(int i = 0; i < num_bullets; i++)
 	{
 		if(bullet[i].live)
 		{
@@ -305,4 +319,58 @@ void update_bullet(Bullet *bullet)
 		}
 	}
 }
+
+void init_commet(Commet *commet)
+{
+    int temp_pos=0;
+    for(int i=0; i<num_commets;i++)
+    {
+        commet[i].live = true;
+        commet[i].speed=1 ;
+        if(i!=0)
+        {
+        commet[i].x =commet[i-1].x+30;
+        }
+        else
+        {
+            commet[i].x = 30;
+        }
+        if((float)i/13==(float)(1.0))
+        {
+            temp_pos=-30;
+            commet[i].x = 30;
+        }
+        
+        commet[i].y = temp_pos;
+        
+      
+    }
+
+}
+
+void draw_commet(Commet *commet)
+{
+    for(int i=0; i<num_commets;i++)
+    {
+    //    al_draw_filled_ellipse(commet[i].x,commet[i].y,,al_map_rgb(255,100, 0));
+          al_draw_filled_circle(commet[i].x,commet[i].y,10,al_map_rgb(100,100,100));
+       //  al_draw_filled_circle(commet[i].x+30,commet[i].y,10,al_map_rgb(100,100,100));
+      //  fprintf(stderr, "the x position %d y position %d and the comet %d\n",commet[i].x,commet[i].y,i);
+        
+        
+    }
+    
+}
+
+void update_commet(Commet *commet)
+{
+    for(int i=0; i<num_commets;i++)
+    {
+        commet[i].y += commet[i].speed;
+    }
+    
+
+}
+
+
 
