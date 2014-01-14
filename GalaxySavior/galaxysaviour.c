@@ -16,10 +16,10 @@ const int x=0;
 const int y=0;
 const int FPS = 60;
 const int num_bullets=5;
-const int num_commets = 26;
+const int num_commets = 65;
 const bool GameOver= false;
-int  x_temp=0;
-int y_temp=10;
+int   x_temp=0;
+int   y_temp=10;
 
 enum MKEYS{KEY_UP,KEY_DOWN,KEY_LEFT,KEY_RIGHT,KEY_SPACEBAR};
 bool keys[5]= {false,false,false,false,false};
@@ -39,6 +39,10 @@ void update_bullet(Bullet bullet[]);
 void init_commet(Commet commet[]);
 void draw_commet(Commet commet[]);
 void update_commet(Commet commet[]);
+
+void bullet_collision(Bullet bullet[],Commet commet[]);
+//void ship_collision(Ship ship[] , Commet commet[]);
+
 
 int main(void)
 {
@@ -116,6 +120,7 @@ int main(void)
             {
                 update_bullet(&bullet);
                 update_commet(&commet);
+                bullet_collision(&bullet,&commet);
             }
             
             redraw = true;
@@ -323,8 +328,11 @@ void update_bullet(Bullet *bullet)
 void init_commet(Commet *commet)
 {
     int temp_pos=0;
+    int co=1;
     for(int i=0; i<num_commets;i++)
     {
+        commet[i].boundx =0 ;
+        commet[i].boundy =5 ;
         commet[i].live = true;
         commet[i].speed=1 ;
         if(i!=0)
@@ -335,9 +343,10 @@ void init_commet(Commet *commet)
         {
             commet[i].x = 30;
         }
-        if((float)i/13==(float)(1.0))
+        if((float)i/13==(float)(co))
         {
-            temp_pos=-30;
+            temp_pos=-40*co;
+            co++;
             commet[i].x = 30;
         }
         
@@ -353,9 +362,12 @@ void draw_commet(Commet *commet)
     for(int i=0; i<num_commets;i++)
     {
     //    al_draw_filled_ellipse(commet[i].x,commet[i].y,,al_map_rgb(255,100, 0));
-          al_draw_filled_circle(commet[i].x,commet[i].y,10,al_map_rgb(100,100,100));
+        if(commet[i].live == true)
+        {
+        al_draw_filled_circle(commet[i].x,commet[i].y,10,al_map_rgb(100,100,100));
+        }
        //  al_draw_filled_circle(commet[i].x+30,commet[i].y,10,al_map_rgb(100,100,100));
-      //  fprintf(stderr, "the x position %d y position %d and the comet %d\n",commet[i].x,commet[i].y,i);
+       // fprintf(stderr, "the x position %d y position %d and the comet %d\n",commet[i].x,commet[i].y,i);
         
         
     }
@@ -366,11 +378,39 @@ void update_commet(Commet *commet)
 {
     for(int i=0; i<num_commets;i++)
     {
+        if(commet[i].live == true)
         commet[i].y += commet[i].speed;
+        if(commet[i].y>SCREEN_H)
+        {
+            commet[i].live =false;
+        }
     }
     
 
 }
 
+void bullet_collision(Bullet *bullet,Commet *commet)
+{
+    for(int i = 0; i <num_bullets; i++)
+	{
+		if(bullet[i].live)
+		{
+			for(int j =0; j <num_commets; j++)
+			{
+				if(commet[j].live)
+				{
+					if(commet[j].y==bullet[i].y&&bullet[j].x==commet[i].x)
+                    {
+						bullet[i].live = false;
+						commet[j].live = false;
+                        
+						//ship.score++;
+					}
+				}
+			}
+		}
+	}
+    
+}
 
 

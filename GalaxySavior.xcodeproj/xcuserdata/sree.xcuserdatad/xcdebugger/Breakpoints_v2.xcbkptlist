@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GalaxySavior/galaxysaviour.c"
-            timestampString = "411237223.386949"
+            timestampString = "411394880.124083"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "296"
-            endingLineNumber = "296"
-            landmarkName = "draw_bullet()"
+            startingLineNumber = "298"
+            endingLineNumber = "298"
+            landmarkName = "fire_bullet()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,11 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GalaxySavior/galaxysaviour.c"
-            timestampString = "411237223.386949"
+            timestampString = "411394880.124083"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "269"
-            endingLineNumber = "269">
+            startingLineNumber = "271"
+            endingLineNumber = "271"
+            landmarkName = "move_ship_down()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -40,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GalaxySavior/galaxysaviour.c"
-            timestampString = "411237223.386949"
+            timestampString = "411394880.124083"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "267"
-            endingLineNumber = "267"
+            startingLineNumber = "269"
+            endingLineNumber = "269"
             landmarkName = "move_ship_down()"
             landmarkType = "7">
          </BreakpointContent>
